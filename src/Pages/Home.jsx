@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback, memo } from "react"
 import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -223,7 +222,11 @@ const Home = () => {
                 <div className={`relative z-10 w-full opacity-90 transform transition-transform duration-500 ${
                   isHovering ? "scale-105" : "scale-100"
                 }`}>
-                  <DotLottieReact {...lottieOptions} />
+                  <img 
+                    src="/Coding.gif" 
+                    alt="Coding Animation" 
+                    className="w-full h-auto max-w-[500px] mx-auto object-contain drop-shadow-[0_0_40px_rgba(168,85,247,0.4)]"
+                  />
                 </div>
 
                 <div className={`absolute inset-0 pointer-events-none transition-all duration-700 ${
