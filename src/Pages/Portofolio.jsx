@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import CardProject from "../components/CardProject";
 import TechStackIcon from "../components/TechStackIcon";
+import OrbitTechStack from "../components/OrbitTechStack";
+import HexagonTechStack from "../components/HexagonTechStack";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "../components/Certificate";
@@ -29,6 +31,9 @@ const techStacks = [
   { icon: "/bootstrap.svg", language: "Bootstrap" },
   { icon: "/laravel.svg", language: "Laravel" },
   { icon: "/github.svg", language: "GitHub" },
+  { icon: "/postgresql.svg", language: "PostgreSQL" },
+  { icon: "/nextjs.svg", language: "Next.js" },
+  { icon: "/express.svg", language: "Express.js" },
 ];
 
 // Toggle Button Component
@@ -197,25 +202,16 @@ export default function Portfolio() {
               Tech Stack
             </h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
-            {techStacks.map((stack, index) => (
-              <div
-                key={index}
-                data-aos={
-                  index % 3 === 0
-                    ? "fade-up-right"
-                    : index % 3 === 1
-                    ? "fade-up"
-                    : "fade-up-left"
-                }
-                data-aos-duration="1000"
-              >
-                <TechStackIcon
-                  TechStackIcon={stack.icon}
-                  Language={stack.language}
-                />
-              </div>
-            ))}
+          <div data-aos="fade-up" data-aos-duration="1000">
+            {/* Desktop View: Orbit System */}
+            <div className="hidden md:block w-full">
+              <OrbitTechStack techStacks={techStacks} />
+            </div>
+
+            {/* Mobile View: Hexagon Hive */}
+            <div className="block md:hidden w-full">
+              <HexagonTechStack techStacks={techStacks} />
+            </div>
           </div>
         </section>
       </div>

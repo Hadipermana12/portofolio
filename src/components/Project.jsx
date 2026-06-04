@@ -5,6 +5,7 @@ import ecomerce from '../assets/e-comerse.png'
 import wiintruction from '../assets/wi.png';
 import dashbordKmma from '../assets/dashbord-kmma.png';
 import mobileKmma from '../assets/mobile-kmma.jpeg';
+import topUpAppss from '../assets/top-up_apps.png';
 
 export const dummyProjects = [
     {
@@ -114,5 +115,24 @@ Features: [
       "Manajemen Hak Akses Pengguna (Role-Based Access)"
     ]
   },
+    {
+    id: 7, // Sesuaikan ID ini dengan urutan project di portofolio Anda
+    Img: topUpAppss, // Pastikan variabel gambar di-import di bagian atas file
+    Title: "Hadi Store - Fullstack Top Up & Payment Platform",
+    Description: "Aplikasi layanan top-up game digital, pulsa, dan kuota yang terintegrasi secara seamless dengan ekosistem Midtrans Payment Gateway. Dibangun menggunakan arsitektur Fullstack modern (React.js di sisi frontend & Laravel di backend) melalui RESTful API. Platform ini mampu men-generate Invoice ID unik, memproses transaksi secara aman melalui Midtrans Snap Token, dan otomatis memperbarui status pembayaran (UNPAID ke PAID) secara real-time berdasarkan callback payment server.",
+    Link: "https://#", // Ganti dengan link live production jika sudah di-deploy
+    Github: "https://github.com/Hadipermana12/Aplikasi_TopUp", // Link disesuaikan dengan repo aktif
+    detailLink: "/project/7",
+    TechStack: ["React", "Vite", "Tailwind CSS", "Laravel 10", "MySQL", "Midtrans API"],
+    Features: [
+      "Integrasi Payment Gateway Midtrans Snap (QRIS, E-Wallet, VA, dll)",
+      "Fullstack RESTful API Architecture (Pemisahan Client & Server)",
+      "Automated Payment Status Validation & Database Synchronisation",
+      "Dynamic Database Seeding untuk Ratusan SKU Produk (Game & Pulsa)",
+      "Desain UI/UX Modern & Fully Responsive menggunakan Tailwind CSS",
+      "Sistem Relasi Database Kompleks untuk Riwayat Transaksi & User"
+    ]
+  },
+
   
 ];
