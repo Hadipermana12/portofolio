@@ -6,6 +6,7 @@ import wiintruction from '../assets/wi.png';
 import dashbordKmma from '../assets/dashbord-kmma.png';
 import mobileKmma from '../assets/mobile-kmma.jpeg';
 import topUpAppss from '../assets/top-up_apps.png';
+import lpKmma from '../assets/lp-kmma.png';
 
 export const dummyProjects = [
     {
@@ -133,6 +134,22 @@ Features: [
       "Sistem Relasi Database Kompleks untuk Riwayat Transaksi & User"
     ]
   },
-
-  
+  {
+    id: 8,
+    Img: lpKmma,
+    Title: "KMMA Web Portal & Dynamic Company Profile",
+    Description: "Website profil perusahaan interaktif dan portal informasi publik Koperasi Mitra Makmur Astra (KMMA) yang terintegrasi dengan Content Management System (CMS) dinamis. Menghadirkan desain dark-glassmorphism premium, sistem navigasi jangkar pintar (smart hash-scroll), halaman khusus program Beasiswa & Pembiayaan, serta halaman Admin Dashboard yang aman untuk memodifikasi konten visual dan tekstual situs secara real-time.",
+    Link: "https://kmma.co.id/",
+    Github: "https://github.com/Hadipermana12/company-profil_matema",
+    detailLink: "/project/8",
+    TechStack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "AOS", "Node.js", "Express", "MySQL"],
+    Features: [
+      "Dynamic Content Management System (CMS) untuk Update Banner & Teks",
+      "Desain Visual Premium bertema Dark-Glassmorphism & Glowing Blobs",
+      "Integrasi Library Animasi Interaktif (AOS & Custom Framer Motion)",
+      "Smart Hash-Scroll & Recovery Polling untuk Navigasi Lintas Halaman",
+      "Halaman Detail Pengumuman Beasiswa dan Program Pembiayaan Anggota",
+      "Sistem Keamanan Login Admin dengan JWT Token & Toggle Show/Hide Password"
+    ]
+  },
 ];
